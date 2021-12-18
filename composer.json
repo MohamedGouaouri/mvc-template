@@ -1,0 +1,15 @@
+{
+    "name": "mohamed/mvc",
+    "description": "A simple MVC template for php web projects",
+    "type": "project",
+    "license": "GNU GENERAL PUBLIC LICENSE",
+    "authors": [
+        {
+            "name": "MohamedGouaouri",
+            "email": "im_gouaouri@esi.dz"
+        }
+    ],
+    "require": {
+        "ext-pdo": "*"
+    }
+}
