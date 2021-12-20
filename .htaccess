@@ -1,4 +1,4 @@
 ## Used by Apache
 RewriteEngine On
-#RewriteRule ^([^/]*)/([^/]*)$ index.php?url=$1&username=$2 [L]
+
 RewriteRule ^([^/]+)/? index.php?url=$1 [L,QSA]
