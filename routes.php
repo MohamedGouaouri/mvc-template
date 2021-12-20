@@ -2,13 +2,19 @@
 
 // Register routes
 
-Route::set("about", function (){
+Route::get("index.php", function (){
+
+    // Load view and send data
+    View::make("index", ["title" => "Minimal MVC", "name" => "Php Guru"]);
+});
+
+Route::get("about", function (){
     // In usual way invoke th view
-    echo "<h1>About us</h1>";
+    View::make("about");
 });
 
 
-Route::set("contact", function (){
+Route::get("contact", function (){
     // In usual way invoke th view
-    echo "<h1>Contact</h1>";
+    View::make("contact", ["name" => "mohamed"]);
 });
