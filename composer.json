@@ -10,6 +10,7 @@
         }
     ],
     "require": {
-        "ext-pdo": "*"
+        "ext-pdo": "*",
+        "twig/twig": "^3.0"
     }
 }
