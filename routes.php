@@ -16,11 +16,17 @@ Route::get("index.php", function (){
 
 Route::get("about", function (){
     // In usual way invoke th view
-    View::make("about.php.twig");
+    View::make("about.php.twig", ["name" => "mohamed"]);
 });
 
 
 Route::get("contact", function (){
     // In usual way invoke th view
     View::make("contact.php.twig");
+});
+
+
+// Register post requests
+Route::post("index.php", function (){
+    echo $_POST["id"];
 });

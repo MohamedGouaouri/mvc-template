@@ -11,10 +11,8 @@ class View{
     // static method to create views
     public static FilesystemLoader $loader;
     public static Environment $twig;
-    public static function make(string $viewName, ...$data){
+    public static function make(string $viewName, array $data = []){
         // Load a view and pass data
-//        require_once ("resources/views/"."$viewName".".php");
-
         try {
             echo self::$twig->render($viewName, $data);
         } catch (LoaderError $e) {
