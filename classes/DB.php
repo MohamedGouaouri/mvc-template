@@ -1,5 +1,5 @@
 <?php
-require "mvc/config/db.php";
+require_once "config/db.php";
 
 class DB{
     private static $host = HOST;

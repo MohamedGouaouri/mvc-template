@@ -11,7 +11,10 @@ View::$loader = new FilesystemLoader(__DIR__ . DIRECTORY_SEPARATOR . "resources/
 View::$twig = new Environment(View::$loader);
 
 Route::get("index.php", function (){
-    View::make("index.php.twig", ["name" => "mohamed"]);
+//    View::make("index.php.twig", ["name" => "mohamed"]);
+    // test the db facade
+    var_dump(User::all());
+
 });
 
 Route::get("about", function (){
