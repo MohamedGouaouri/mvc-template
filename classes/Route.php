@@ -1,11 +1,11 @@
 <?php
 
 class Route{
-    private static $valid_get_routes = array();
-    private static $valid_post_routes = array();
-    private static $valid_put_routes = array();
-    private static $valid_patch_routes = array();
-    private static $valid_delete_routes = array();
+    private static array $valid_get_routes = array();
+    private static array $valid_post_routes = array();
+    private static array $valid_put_routes = array();
+    private static array $valid_patch_routes = array();
+    private static array $valid_delete_routes = array();
     public static function get($route, $function){
         // handle get requests
         self::$valid_get_routes[] =  $route;

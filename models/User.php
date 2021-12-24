@@ -3,7 +3,7 @@
 
 class User extends Model
 {
-    private static $table_name = "users";
+    private static string $table_name = "users";
     private string $username;
     public function __construct($username)
     {

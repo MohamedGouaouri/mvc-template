@@ -14,7 +14,6 @@ Route::get("index.php", function (){
 //    View::make("index.php.twig", ["name" => "mohamed"]);
     // test the db facade
     var_dump(User::all());
-
 });
 
 Route::get("about", function (){
